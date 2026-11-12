@@ -1,6 +1,6 @@
 # ExceptionHandlingExmples
 
-it has all the examples of an exception handling problems, 
+it has some of the examples of an exception handling problems, 
 
-## These are Practice Questions
+## These are Practice Answers
 #
