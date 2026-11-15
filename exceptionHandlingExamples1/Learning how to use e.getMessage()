@@ -1,0 +1,39 @@
+public class TestSubject1 {
+	public static void main(String[] args) {
+		try {
+			Main ts = new Main();
+			ts.dataHandler();
+		} catch (Exception e) {
+			System.out.println("Caught in act " + e.getMessage());
+		}
+	}
+}
+
+class Main {
+	public void dataHandler() throws ArrayIndexOutOfBoundsException {
+		int[] numb = { 1, 2, 3, };
+		int index = 5;
+		System.out.println(numb[index]);
+	}
+}
+
+
+
+//public class TestSubject1 {
+//	public static void main(String[] args) {
+//		try {
+////			Main ts = new Main();
+////			ts.dataHandler();
+//			int[] numb = {1,2,3,};
+//			int index = 5;
+//			System.out.println(numb[index]);
+//		} catch (Exception e) {
+//			System.out.println("Caught in act " + e.getMessage());
+//		}
+//	}
+//}
+//
+////class Main {
+////	public void dataHandler () throws ArrayIndexOutOfBoundsException {
+////	}
+////}
