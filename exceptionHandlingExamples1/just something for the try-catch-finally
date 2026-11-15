@@ -1,0 +1,12 @@
+public class TestSubject2 {
+	public static void main(String[] args) {
+		try {
+			int result = 10/0;
+		} catch (ArithmeticException e) {
+			System.out.println("Caught NUll Pointer Exception");
+		} finally {
+			System.out.println("Finally Block executed");
+		}
+		System.out.println("Program Continuess");
+	}
+}
