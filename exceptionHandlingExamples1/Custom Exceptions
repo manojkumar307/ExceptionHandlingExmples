@@ -1,0 +1,26 @@
+@SuppressWarnings("serial")
+class NotEnoughEpisodesWatchedException extends Exception {
+	public NotEnoughEpisodesWatchedException(String message) {
+		super(message);
+	}
+}
+
+public class TestSubject3 {
+	public static void main(String[] args) {
+		StreamNow sn = new StreamNow();
+		try {
+			sn.unlockFeature(2);
+		} catch (NotEnoughEpisodesWatchedException e) {
+			System.out.println("Error " + e.getMessage());
+		}
+	}
+}
+
+class StreamNow {
+	void unlockFeature(int watchedEpisodes) throws NotEnoughEpisodesWatchedException {
+		if (watchedEpisodes < 5) {
+			throw new NotEnoughEpisodesWatchedException("You need to watch atleast 5 episodes to unlock this feature.");
+		}
+		System.out.println("Bonus feature unlocked!.");
+	}
+}
